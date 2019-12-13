@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */; };
-		CED85A7C23A3AEA2000AA3C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */; };
 		CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */; };
 		CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */; };
 		CED85A8D23A3AEA5000AA3C6 /* SwapWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A8C23A3AEA5000AA3C6 /* SwapWatcherTests.swift */; };
 		CED85A9823A3AEA5000AA3C6 /* SwapWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */; };
+		CED85AA923A3CFD1000AA3C6 /* GetBytesWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,6 @@
 /* Begin PBXFileReference section */
 		CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CED85A8023A3AEA4000AA3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED85A8223A3AEA4000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwapWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapWatcherUITests.swift; sourceTree = "<group>"; };
 		CED85A9923A3AEA5000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBytesWithPrefix.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */,
-				CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */,
+				CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */,
 				CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */,
 				CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */,
 				CED85A8223A3AEA4000AA3C6 /* Info.plist */,
@@ -254,8 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED85A7C23A3AEA2000AA3C6 /* ViewController.swift in Sources */,
 				CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */,
+				CED85AA923A3CFD1000AA3C6 /* GetBytesWithPrefix.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
