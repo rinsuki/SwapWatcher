@@ -22,8 +22,8 @@ func getBytesWithPrefix(bytes: UInt64) -> String {
         memUsedStr = "KB"
     } else {
         memUsedPrefix = 1
-        memUsedStr = " bytes"
+        memUsedStr = "bytes"
     }
     
-    return String(format: "%.2f", Double(bytes) / Double(memUsedPrefix)) + memUsedStr
+    return String(format: "%.2f", Double(bytes) / Double(memUsedPrefix)) + " " + memUsedStr
 }
