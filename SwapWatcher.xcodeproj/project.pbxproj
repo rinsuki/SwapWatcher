@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */; };
+		CED85A7C23A3AEA2000AA3C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */; };
+		CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */; };
+		CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */; };
+		CED85A8D23A3AEA5000AA3C6 /* SwapWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A8C23A3AEA5000AA3C6 /* SwapWatcherTests.swift */; };
+		CED85A9823A3AEA5000AA3C6 /* SwapWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED85A8923A3AEA5000AA3C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED85A6E23A3AEA2000AA3C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED85A7523A3AEA2000AA3C6;
+			remoteInfo = SwapWatcher;
+		};
+		CED85A9423A3AEA5000AA3C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED85A6E23A3AEA2000AA3C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED85A7523A3AEA2000AA3C6;
+			remoteInfo = SwapWatcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED85A8023A3AEA4000AA3C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CED85A8223A3AEA4000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED85A8323A3AEA4000AA3C6 /* SwapWatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwapWatcher.entitlements; sourceTree = "<group>"; };
+		CED85A8823A3AEA5000AA3C6 /* SwapWatcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwapWatcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED85A8C23A3AEA5000AA3C6 /* SwapWatcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapWatcherTests.swift; sourceTree = "<group>"; };
+		CED85A8E23A3AEA5000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwapWatcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapWatcherUITests.swift; sourceTree = "<group>"; };
+		CED85A9923A3AEA5000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED85A7323A3AEA2000AA3C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A8523A3AEA5000AA3C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A9023A3AEA5000AA3C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED85A6D23A3AEA2000AA3C6 = {
+			isa = PBXGroup;
+			children = (
+				CED85A7823A3AEA2000AA3C6 /* SwapWatcher */,
+				CED85A8B23A3AEA5000AA3C6 /* SwapWatcherTests */,
+				CED85A9623A3AEA5000AA3C6 /* SwapWatcherUITests */,
+				CED85A7723A3AEA2000AA3C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED85A7723A3AEA2000AA3C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */,
+				CED85A8823A3AEA5000AA3C6 /* SwapWatcherTests.xctest */,
+				CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED85A7823A3AEA2000AA3C6 /* SwapWatcher */ = {
+			isa = PBXGroup;
+			children = (
+				CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */,
+				CED85A7B23A3AEA2000AA3C6 /* ViewController.swift */,
+				CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */,
+				CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */,
+				CED85A8223A3AEA4000AA3C6 /* Info.plist */,
+				CED85A8323A3AEA4000AA3C6 /* SwapWatcher.entitlements */,
+			);
+			path = SwapWatcher;
+			sourceTree = "<group>";
+		};
+		CED85A8B23A3AEA5000AA3C6 /* SwapWatcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				CED85A8C23A3AEA5000AA3C6 /* SwapWatcherTests.swift */,
+				CED85A8E23A3AEA5000AA3C6 /* Info.plist */,
+			);
+			path = SwapWatcherTests;
+			sourceTree = "<group>";
+		};
+		CED85A9623A3AEA5000AA3C6 /* SwapWatcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */,
+				CED85A9923A3AEA5000AA3C6 /* Info.plist */,
+			);
+			path = SwapWatcherUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED85A7523A3AEA2000AA3C6 /* SwapWatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED85A9C23A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcher" */;
+			buildPhases = (
+				CED85A7223A3AEA2000AA3C6 /* Sources */,
+				CED85A7323A3AEA2000AA3C6 /* Frameworks */,
+				CED85A7423A3AEA2000AA3C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwapWatcher;
+			productName = SwapWatcher;
+			productReference = CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED85A8723A3AEA5000AA3C6 /* SwapWatcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED85A9F23A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcherTests" */;
+			buildPhases = (
+				CED85A8423A3AEA5000AA3C6 /* Sources */,
+				CED85A8523A3AEA5000AA3C6 /* Frameworks */,
+				CED85A8623A3AEA5000AA3C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED85A8A23A3AEA5000AA3C6 /* PBXTargetDependency */,
+			);
+			name = SwapWatcherTests;
+			productName = SwapWatcherTests;
+			productReference = CED85A8823A3AEA5000AA3C6 /* SwapWatcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CED85A9223A3AEA5000AA3C6 /* SwapWatcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED85AA223A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcherUITests" */;
+			buildPhases = (
+				CED85A8F23A3AEA5000AA3C6 /* Sources */,
+				CED85A9023A3AEA5000AA3C6 /* Frameworks */,
+				CED85A9123A3AEA5000AA3C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED85A9523A3AEA5000AA3C6 /* PBXTargetDependency */,
+			);
+			name = SwapWatcherUITests;
+			productName = SwapWatcherUITests;
+			productReference = CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED85A6E23A3AEA2000AA3C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = rinsuki;
+				TargetAttributes = {
+					CED85A7523A3AEA2000AA3C6 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					CED85A8723A3AEA5000AA3C6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CED85A7523A3AEA2000AA3C6;
+					};
+					CED85A9223A3AEA5000AA3C6 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = CED85A7523A3AEA2000AA3C6;
+					};
+				};
+			};
+			buildConfigurationList = CED85A7123A3AEA2000AA3C6 /* Build configuration list for PBXProject "SwapWatcher" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED85A6D23A3AEA2000AA3C6;
+			productRefGroup = CED85A7723A3AEA2000AA3C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED85A7523A3AEA2000AA3C6 /* SwapWatcher */,
+				CED85A8723A3AEA5000AA3C6 /* SwapWatcherTests */,
+				CED85A9223A3AEA5000AA3C6 /* SwapWatcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED85A7423A3AEA2000AA3C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */,
+				CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A8623A3AEA5000AA3C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A9123A3AEA5000AA3C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED85A7223A3AEA2000AA3C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED85A7C23A3AEA2000AA3C6 /* ViewController.swift in Sources */,
+				CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A8423A3AEA5000AA3C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED85A8D23A3AEA5000AA3C6 /* SwapWatcherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED85A8F23A3AEA5000AA3C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED85A9823A3AEA5000AA3C6 /* SwapWatcherUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED85A8A23A3AEA5000AA3C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED85A7523A3AEA2000AA3C6 /* SwapWatcher */;
+			targetProxy = CED85A8923A3AEA5000AA3C6 /* PBXContainerItemProxy */;
+		};
+		CED85A9523A3AEA5000AA3C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED85A7523A3AEA2000AA3C6 /* SwapWatcher */;
+			targetProxy = CED85A9423A3AEA5000AA3C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED85A8023A3AEA4000AA3C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED85A9A23A3AEA5000AA3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED85A9B23A3AEA5000AA3C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		CED85A9D23A3AEA5000AA3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwapWatcher/SwapWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwapWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CED85A9E23A3AEA5000AA3C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwapWatcher/SwapWatcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwapWatcher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CED85AA023A3AEA5000AA3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SwapWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwapWatcher.app/Contents/MacOS/SwapWatcher";
+			};
+			name = Debug;
+		};
+		CED85AA123A3AEA5000AA3C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SwapWatcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwapWatcher.app/Contents/MacOS/SwapWatcher";
+			};
+			name = Release;
+		};
+		CED85AA323A3AEA5000AA3C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SwapWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwapWatcher;
+			};
+			name = Debug;
+		};
+		CED85AA423A3AEA5000AA3C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				INFOPLIST_FILE = SwapWatcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = SwapWatcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED85A7123A3AEA2000AA3C6 /* Build configuration list for PBXProject "SwapWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED85A9A23A3AEA5000AA3C6 /* Debug */,
+				CED85A9B23A3AEA5000AA3C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED85A9C23A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED85A9D23A3AEA5000AA3C6 /* Debug */,
+				CED85A9E23A3AEA5000AA3C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED85A9F23A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED85AA023A3AEA5000AA3C6 /* Debug */,
+				CED85AA123A3AEA5000AA3C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED85AA223A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED85AA323A3AEA5000AA3C6 /* Debug */,
+				CED85AA423A3AEA5000AA3C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED85A6E23A3AEA2000AA3C6 /* Project object */;
+}
