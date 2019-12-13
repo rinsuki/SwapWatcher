@@ -34,5 +34,9 @@
 	<true/>
 	<key>LSUIElement</key>
 	<true/>
+	<key>SUPublicEDKey</key>
+	<string>wPgjlj7DQJLfGpgEnDeqEwOfEDNeU3m04ayhcds9CGs=</string>
+	<key>SUFeedURL</key>
+	<string>https://update-info.rinsuki.net/swap-watcher/sparkle_feed</string>
 </dict>
 </plist>

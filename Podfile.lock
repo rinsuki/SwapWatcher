@@ -1,0 +1,20 @@
+PODS:
+  - Sparkle (1.22.0)
+  - "※ikemen (0.6.0)"
+
+DEPENDENCIES:
+  - Sparkle
+  - "※ikemen"
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Sparkle
+    - "※ikemen"
+
+SPEC CHECKSUMS:
+  Sparkle: 593ac2e677c07bcb6c3b22d621240e7cbedaab57
+  "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
+
+PODFILE CHECKSUM: 6287d166481e13ab27f1a2f617fe77acefa0c815
+
+COCOAPODS: 1.8.4

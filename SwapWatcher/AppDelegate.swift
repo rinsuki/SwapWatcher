@@ -7,6 +7,8 @@
 //
 
 import Cocoa
+import Sparkle
+import Ikemen
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -20,6 +22,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let swapUsedItem = NSMenuItem(title: "---", action: nil, keyEquivalent: "")
     let swapAllocatedItem = NSMenuItem(title: "---", action: nil, keyEquivalent: "")
+    lazy var automaticallyCheckUpdatesItem = NSMenuItem(
+        title: "Automatically check for updates",
+        action: #selector(switchAutomaticallyCheckUpdatesFlag),
+        keyEquivalent: ""
+    ) ※ { i in
+        i.target = self
+    }
+    
+    let updater = SUUpdater.shared()!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -31,8 +42,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(swapUsedItem)
         menu.addItem(swapAllocatedItem)
         menu.addItem(.separator())
+        menu.addItem(.init(title: "Check for Updates...", action: #selector(updater.checkForUpdates), keyEquivalent: "") ※ { i in
+            i.target = updater
+        })
+        menu.addItem(automaticallyCheckUpdatesItem)
+        menu.addItem(.separator())
         menu.addItem(.init(title: "Quit SwapWatcher", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
         menuItem.menu = menu
+        
+        didUpdateAutomaticallyCheckUpdatesFlag()
         
         timer.fire()
     }
@@ -64,5 +82,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         swapAllocatedItem.title = "Swap Allocated: \(getBytesWithPrefix(bytes: usage.xsu_total))"
     }
 
+    @objc func switchAutomaticallyCheckUpdatesFlag() {
+        updater.automaticallyChecksForUpdates.toggle()
+        didUpdateAutomaticallyCheckUpdatesFlag()
+    }
+    
+    func didUpdateAutomaticallyCheckUpdatesFlag() {
+        automaticallyCheckUpdatesItem.state = updater.automaticallyChecksForUpdates ? .on : .off
+    }
 }
 
