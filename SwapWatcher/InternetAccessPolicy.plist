@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Connections</key>
+	<array>
+		<dict>
+			<key>Purpose</key>
+			<string>SwapWatcher checks for new updates.</string>
+			<key>Port</key>
+			<string>443</string>
+			<key>NetworkProtocol</key>
+			<string>TCP</string>
+			<key>Host</key>
+			<string>update-info.rinsuki.net</string>
+			<key>IsIncoming</key>
+			<false/>
+		</dict>
+	</array>
+	<key>Website</key>
+	<string>https://rinsuki.net</string>
+	<key>DeveloperName</key>
+	<string>rinsuki</string>
+	<key>ApplicationDescription</key>
+	<string>SwapWatcher is Show Swap Usage in Menu bar of your Mac.</string>
+</dict>
+</plist>

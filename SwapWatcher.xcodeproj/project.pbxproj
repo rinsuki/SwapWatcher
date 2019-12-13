@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		313B8EE327C707B0579DD063 /* Pods_SwapWatcher_SwapWatcherUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE2791DCD71934CF3F4955D /* Pods_SwapWatcher_SwapWatcherUITests.framework */; };
 		4F8E354635D7594746C51ADA /* Pods_SwapWatcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86E348DFD1AC87F2F3EC0F /* Pods_SwapWatcherTests.framework */; };
 		714C98F4DC435B5AD15C9A22 /* Pods_SwapWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4420C24B1471E8F70176142 /* Pods_SwapWatcher.framework */; };
+		CEA9A3F823A4016D00EFB634 /* InternetAccessPolicy.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */; };
 		CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */; };
 		CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */; };
 		CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */; };
 		CED85A8D23A3AEA5000AA3C6 /* SwapWatcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A8C23A3AEA5000AA3C6 /* SwapWatcherTests.swift */; };
 		CED85A9823A3AEA5000AA3C6 /* SwapWatcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */; };
 		CED85AA923A3CFD1000AA3C6 /* GetBytesWithPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */; };
+		CEE8A41B23A42C30006483E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8A41A23A42C30006483E0 /* AppDelegate.swift */; };
+		CEE8A41F23A42C33006483E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE8A41E23A42C33006483E0 /* Assets.xcassets */; };
+		CEE8A42223A42C33006483E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE8A42023A42C33006483E0 /* Main.storyboard */; };
+		CEE8A42923A4311E006483E0 /* GetHelperApplicationHasEnabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE8A42823A4311E006483E0 /* GetHelperApplicationHasEnabled.swift */; };
+		CEE8A42D23A4345D006483E0 /* SwapWatcherLaunchHelper.app in Copy Files */ = {isa = PBXBuildFile; fileRef = CEE8A41823A42C30006483E0 /* SwapWatcherLaunchHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,28 @@
 			remoteGlobalIDString = CED85A7523A3AEA2000AA3C6;
 			remoteInfo = SwapWatcher;
 		};
+		CEE8A42A23A43440006483E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED85A6E23A3AEA2000AA3C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE8A41723A42C30006483E0;
+			remoteInfo = SwapWatcherLaunchHelper;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE8A42C23A43446006483E0 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				CEE8A42D23A4345D006483E0 /* SwapWatcherLaunchHelper.app in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		396C5C0A7A1EE45F7ADB4C68 /* Pods-SwapWatcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapWatcherTests.release.xcconfig"; path = "Target Support Files/Pods-SwapWatcherTests/Pods-SwapWatcherTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,6 +71,7 @@
 		A1D945922AA67FE654CB4A64 /* Pods-SwapWatcherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwapWatcherTests.debug.xcconfig"; path = "Target Support Files/Pods-SwapWatcherTests/Pods-SwapWatcherTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4420C24B1471E8F70176142 /* Pods_SwapWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE2791DCD71934CF3F4955D /* Pods_SwapWatcher_SwapWatcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapWatcher_SwapWatcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InternetAccessPolicy.plist; sourceTree = "<group>"; };
 		CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +85,13 @@
 		CED85A9723A3AEA5000AA3C6 /* SwapWatcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapWatcherUITests.swift; sourceTree = "<group>"; };
 		CED85A9923A3AEA5000AA3C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBytesWithPrefix.swift; sourceTree = "<group>"; };
+		CEE8A41823A42C30006483E0 /* SwapWatcherLaunchHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapWatcherLaunchHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE8A41A23A42C30006483E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEE8A41E23A42C33006483E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEE8A42123A42C33006483E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEE8A42323A42C33006483E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE8A42423A42C33006483E0 /* SwapWatcherLaunchHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwapWatcherLaunchHelper.entitlements; sourceTree = "<group>"; };
+		CEE8A42823A4311E006483E0 /* GetHelperApplicationHasEnabled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHelperApplicationHasEnabled.swift; sourceTree = "<group>"; };
 		DA86E348DFD1AC87F2F3EC0F /* Pods_SwapWatcherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapWatcherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -85,6 +120,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE8A41523A42C30006483E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -94,6 +136,7 @@
 				CED85A7823A3AEA2000AA3C6 /* SwapWatcher */,
 				CED85A8B23A3AEA5000AA3C6 /* SwapWatcherTests */,
 				CED85A9623A3AEA5000AA3C6 /* SwapWatcherUITests */,
+				CEE8A41923A42C30006483E0 /* SwapWatcherLaunchHelper */,
 				CED85A7723A3AEA2000AA3C6 /* Products */,
 				E47C7F9CA9167249FF05F564 /* Pods */,
 				EF7DE6ED0EDDF0089B6B2F2B /* Frameworks */,
@@ -106,6 +149,7 @@
 				CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */,
 				CED85A8823A3AEA5000AA3C6 /* SwapWatcherTests.xctest */,
 				CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */,
+				CEE8A41823A42C30006483E0 /* SwapWatcherLaunchHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,9 +159,11 @@
 			children = (
 				CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */,
 				CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */,
+				CEE8A42823A4311E006483E0 /* GetHelperApplicationHasEnabled.swift */,
 				CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */,
 				CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */,
 				CED85A8223A3AEA4000AA3C6 /* Info.plist */,
+				CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */,
 				CED85A8323A3AEA4000AA3C6 /* SwapWatcher.entitlements */,
 			);
 			path = SwapWatcher;
@@ -141,6 +187,18 @@
 			path = SwapWatcherUITests;
 			sourceTree = "<group>";
 		};
+		CEE8A41923A42C30006483E0 /* SwapWatcherLaunchHelper */ = {
+			isa = PBXGroup;
+			children = (
+				CEE8A41A23A42C30006483E0 /* AppDelegate.swift */,
+				CEE8A41E23A42C33006483E0 /* Assets.xcassets */,
+				CEE8A42023A42C33006483E0 /* Main.storyboard */,
+				CEE8A42323A42C33006483E0 /* Info.plist */,
+				CEE8A42423A42C33006483E0 /* SwapWatcherLaunchHelper.entitlements */,
+			);
+			path = SwapWatcherLaunchHelper;
+			sourceTree = "<group>";
+		};
 		E47C7F9CA9167249FF05F564 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +209,6 @@
 				A1D945922AA67FE654CB4A64 /* Pods-SwapWatcherTests.debug.xcconfig */,
 				396C5C0A7A1EE45F7ADB4C68 /* Pods-SwapWatcherTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,10 +234,12 @@
 				CED85A7323A3AEA2000AA3C6 /* Frameworks */,
 				CED85A7423A3AEA2000AA3C6 /* Resources */,
 				B727A8B9C1844EDEDE0AFC0A /* [CP] Embed Pods Frameworks */,
+				CEE8A42C23A43446006483E0 /* Copy Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CEE8A42B23A43440006483E0 /* PBXTargetDependency */,
 			);
 			name = SwapWatcher;
 			productName = SwapWatcher;
@@ -226,6 +285,23 @@
 			productReference = CED85A9323A3AEA5000AA3C6 /* SwapWatcherUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CEE8A41723A42C30006483E0 /* SwapWatcherLaunchHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE8A42723A42C33006483E0 /* Build configuration list for PBXNativeTarget "SwapWatcherLaunchHelper" */;
+			buildPhases = (
+				CEE8A41423A42C30006483E0 /* Sources */,
+				CEE8A41523A42C30006483E0 /* Frameworks */,
+				CEE8A41623A42C30006483E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwapWatcherLaunchHelper;
+			productName = SwapWatcherLaunchHelper;
+			productReference = CEE8A41823A42C30006483E0 /* SwapWatcherLaunchHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -247,6 +323,9 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = CED85A7523A3AEA2000AA3C6;
 					};
+					CEE8A41723A42C30006483E0 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 				};
 			};
 			buildConfigurationList = CED85A7123A3AEA2000AA3C6 /* Build configuration list for PBXProject "SwapWatcher" */;
@@ -265,6 +344,7 @@
 				CED85A7523A3AEA2000AA3C6 /* SwapWatcher */,
 				CED85A8723A3AEA5000AA3C6 /* SwapWatcherTests */,
 				CED85A9223A3AEA5000AA3C6 /* SwapWatcherUITests */,
+				CEE8A41723A42C30006483E0 /* SwapWatcherLaunchHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -276,6 +356,7 @@
 			files = (
 				CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */,
 				CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */,
+				CEA9A3F823A4016D00EFB634 /* InternetAccessPolicy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +371,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE8A41623A42C30006483E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE8A41F23A42C33006483E0 /* Assets.xcassets in Resources */,
+				CEE8A42223A42C33006483E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE8A42923A4311E006483E0 /* GetHelperApplicationHasEnabled.swift in Sources */,
 				CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */,
 				CED85AA923A3CFD1000AA3C6 /* GetBytesWithPrefix.swift in Sources */,
 			);
@@ -424,6 +515,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CEE8A41423A42C30006483E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE8A41B23A42C30006483E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -437,6 +536,11 @@
 			target = CED85A7523A3AEA2000AA3C6 /* SwapWatcher */;
 			targetProxy = CED85A9423A3AEA5000AA3C6 /* PBXContainerItemProxy */;
 		};
+		CEE8A42B23A43440006483E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE8A41723A42C30006483E0 /* SwapWatcherLaunchHelper */;
+			targetProxy = CEE8A42A23A43440006483E0 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -444,6 +548,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				CED85A8023A3AEA4000AA3C6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE8A42023A42C33006483E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE8A42123A42C33006483E0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -694,6 +806,46 @@
 			};
 			name = Release;
 		};
+		CEE8A42523A42C33006483E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwapWatcherLaunchHelper/SwapWatcherLaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwapWatcherLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CEE8A42623A42C33006483E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwapWatcherLaunchHelper/SwapWatcherLaunchHelper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4XKKKM86RN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = SwapWatcherLaunchHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.rinsuki.apps.mac.SwapWatcherLaunchHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -729,6 +881,15 @@
 			buildConfigurations = (
 				CED85AA323A3AEA5000AA3C6 /* Debug */,
 				CED85AA423A3AEA5000AA3C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE8A42723A42C33006483E0 /* Build configuration list for PBXNativeTarget "SwapWatcherLaunchHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE8A42523A42C33006483E0 /* Debug */,
+				CEE8A42623A42C33006483E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

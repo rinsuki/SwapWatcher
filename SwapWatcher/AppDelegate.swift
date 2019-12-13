@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Sparkle
+import ServiceManagement
 import Ikemen
 
 @NSApplicationMain
@@ -22,16 +22,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let swapUsedItem = NSMenuItem(title: "---", action: nil, keyEquivalent: "")
     let swapAllocatedItem = NSMenuItem(title: "---", action: nil, keyEquivalent: "")
-    lazy var automaticallyCheckUpdatesItem = NSMenuItem(
-        title: "Automatically check for updates",
-        action: #selector(switchAutomaticallyCheckUpdatesFlag),
-        keyEquivalent: ""
-    ) ※ { i in
-        i.target = self
-    }
     
-    let updater = SUUpdater.shared()!
-
+    let helperBundleId = "net.rinsuki.apps.mac.SwapWatcherLaunchHelper"
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
         menuItem.button?.font = .systemFont(ofSize: 10)
@@ -42,15 +35,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(swapUsedItem)
         menu.addItem(swapAllocatedItem)
         menu.addItem(.separator())
-        menu.addItem(.init(title: "Check for Updates...", action: #selector(updater.checkForUpdates), keyEquivalent: "") ※ { i in
-            i.target = updater
-        })
-        menu.addItem(automaticallyCheckUpdatesItem)
         menu.addItem(.separator())
+        menu.addItem(.init(title: "Launch at Login", action: #selector(toggleLaunchAtLogin), keyEquivalent: "") ※ { i in
+            i.state = getHelperApplicationHasEnabled(helperBundleId) ? .on : .off
+        })
         menu.addItem(.init(title: "Quit SwapWatcher", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
         menuItem.menu = menu
-        
-        didUpdateAutomaticallyCheckUpdatesFlag()
         
         timer.fire()
     }
@@ -81,14 +71,18 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         swapUsedItem.title = "Swap Used: \(getBytesWithPrefix(bytes: usage.xsu_used))"
         swapAllocatedItem.title = "Swap Allocated: \(getBytesWithPrefix(bytes: usage.xsu_total))"
     }
-
-    @objc func switchAutomaticallyCheckUpdatesFlag() {
-        updater.automaticallyChecksForUpdates.toggle()
-        didUpdateAutomaticallyCheckUpdatesFlag()
-    }
     
-    func didUpdateAutomaticallyCheckUpdatesFlag() {
-        automaticallyCheckUpdatesItem.state = updater.automaticallyChecksForUpdates ? .on : .off
+    @objc func toggleLaunchAtLogin(_ sender: NSMenuItem) {
+        let current = sender.state == .on
+        let new = !current
+        if SMLoginItemSetEnabled(helperBundleId as CFString, new) {
+            sender.state = new ? .on : .off
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Failed to register as a Launch Item"
+            alert.informativeText = "Please retry with watch Console.app"
+            alert.runModal()
+        }
     }
 }
 

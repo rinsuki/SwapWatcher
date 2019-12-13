@@ -6,7 +6,6 @@ target 'SwapWatcher' do
   use_frameworks!
 
   # Pods for SwapWatcher
-  pod "Sparkle"
   pod "※ikemen"
 
   target 'SwapWatcherTests' do
