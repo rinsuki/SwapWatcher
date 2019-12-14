@@ -11,6 +11,10 @@
 		4F8E354635D7594746C51ADA /* Pods_SwapWatcherTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA86E348DFD1AC87F2F3EC0F /* Pods_SwapWatcherTests.framework */; };
 		714C98F4DC435B5AD15C9A22 /* Pods_SwapWatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4420C24B1471E8F70176142 /* Pods_SwapWatcher.framework */; };
 		CEA9A3F823A4016D00EFB634 /* InternetAccessPolicy.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */; };
+		CEAE45F023A439AA000CB5D2 /* LicensePlist.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEAE45EF23A439AA000CB5D2 /* LicensePlist.bundle */; };
+		CEBB468523A4C26F00CC6511 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB468323A4C26F00CC6511 /* AboutWindowController.swift */; };
+		CEBB468E23A4D0D100CC6511 /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB468D23A4D0D100CC6511 /* StoryboardScenes.swift */; };
+		CEBB469023A4D4E900CC6511 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBB468F23A4D4E900CC6511 /* AboutViewController.swift */; };
 		CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */; };
 		CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */; };
 		CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */; };
@@ -72,6 +76,11 @@
 		C4420C24B1471E8F70176142 /* Pods_SwapWatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapWatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE2791DCD71934CF3F4955D /* Pods_SwapWatcher_SwapWatcherUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwapWatcher_SwapWatcherUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = InternetAccessPolicy.plist; sourceTree = "<group>"; };
+		CEAE45EF23A439AA000CB5D2 /* LicensePlist.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LicensePlist.bundle; sourceTree = "<group>"; };
+		CEBB468323A4C26F00CC6511 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		CEBB468723A4CF7400CC6511 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		CEBB468D23A4D0D100CC6511 /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		CEBB468F23A4D4E900CC6511 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		CED85A7623A3AEA2000AA3C6 /* SwapWatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapWatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,9 +139,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEAE45F423A43B9E000CB5D2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */,
+				CEE8A42823A4311E006483E0 /* GetHelperApplicationHasEnabled.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CEBB468C23A4D0C100CC6511 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB468D23A4D0D100CC6511 /* StoryboardScenes.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
 		CED85A6D23A3AEA2000AA3C6 = {
 			isa = PBXGroup;
 			children = (
+				CEBB468723A4CF7400CC6511 /* swiftgen.yml */,
 				CED85A7823A3AEA2000AA3C6 /* SwapWatcher */,
 				CED85A8B23A3AEA5000AA3C6 /* SwapWatcherTests */,
 				CED85A9623A3AEA5000AA3C6 /* SwapWatcherUITests */,
@@ -158,12 +185,15 @@
 			isa = PBXGroup;
 			children = (
 				CED85A7923A3AEA2000AA3C6 /* AppDelegate.swift */,
-				CED85AA823A3CFD1000AA3C6 /* GetBytesWithPrefix.swift */,
-				CEE8A42823A4311E006483E0 /* GetHelperApplicationHasEnabled.swift */,
+				CEBB468323A4C26F00CC6511 /* AboutWindowController.swift */,
+				CEBB468F23A4D4E900CC6511 /* AboutViewController.swift */,
+				CEAE45F423A43B9E000CB5D2 /* Utilities */,
+				CEBB468C23A4D0C100CC6511 /* SwiftGen */,
 				CED85A7D23A3AEA4000AA3C6 /* Assets.xcassets */,
 				CED85A7F23A3AEA4000AA3C6 /* Main.storyboard */,
 				CED85A8223A3AEA4000AA3C6 /* Info.plist */,
 				CEA9A3F723A4016D00EFB634 /* InternetAccessPolicy.plist */,
+				CEAE45EF23A439AA000CB5D2 /* LicensePlist.bundle */,
 				CED85A8323A3AEA4000AA3C6 /* SwapWatcher.entitlements */,
 			);
 			path = SwapWatcher;
@@ -230,6 +260,8 @@
 			buildConfigurationList = CED85A9C23A3AEA5000AA3C6 /* Build configuration list for PBXNativeTarget "SwapWatcher" */;
 			buildPhases = (
 				13EAC16E2CA295A2E240A928 /* [CP] Check Pods Manifest.lock */,
+				CEBB468823A4D05700CC6511 /* SwiftGen */,
+				CEAE45F123A439F5000CB5D2 /* LicensePlist */,
 				CED85A7223A3AEA2000AA3C6 /* Sources */,
 				CED85A7323A3AEA2000AA3C6 /* Frameworks */,
 				CED85A7423A3AEA2000AA3C6 /* Resources */,
@@ -356,6 +388,7 @@
 			files = (
 				CED85A7E23A3AEA4000AA3C6 /* Assets.xcassets in Resources */,
 				CED85A8123A3AEA4000AA3C6 /* Main.storyboard in Resources */,
+				CEAE45F023A439AA000CB5D2 /* LicensePlist.bundle in Resources */,
 				CEA9A3F823A4016D00EFB634 /* InternetAccessPolicy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +519,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwapWatcher/Pods-SwapWatcher-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CEAE45F123A439F5000CB5D2 /* LicensePlist */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = LicensePlist;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ $CONFIGURATION = \"Debug\" ]; then\ncd $SRCROOT\n./Pods/LicensePlist/license-plist --output-path $PRODUCT_NAME/LicensePlist.bundle --prefix Licenses\nfi\n";
+		};
+		CEBB468823A4D05700CC6511 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT\"/SwiftGen/bin/swiftgen\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -493,9 +562,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBB469023A4D4E900CC6511 /* AboutViewController.swift in Sources */,
 				CEE8A42923A4311E006483E0 /* GetHelperApplicationHasEnabled.swift in Sources */,
+				CEBB468523A4C26F00CC6511 /* AboutWindowController.swift in Sources */,
 				CED85A7A23A3AEA2000AA3C6 /* AppDelegate.swift in Sources */,
 				CED85AA923A3CFD1000AA3C6 /* GetBytesWithPrefix.swift in Sources */,
+				CEBB468E23A4D0D100CC6511 /* StoryboardScenes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

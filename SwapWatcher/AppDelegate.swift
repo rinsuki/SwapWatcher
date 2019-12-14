@@ -36,6 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(swapAllocatedItem)
         menu.addItem(.separator())
         menu.addItem(.separator())
+        menu.addItem(.init(title: "About SwapWatcher...", action: #selector(showAboutWindow), keyEquivalent: ""))
         menu.addItem(.init(title: "Launch at Login", action: #selector(toggleLaunchAtLogin), keyEquivalent: "") ※ { i in
             i.state = getHelperApplicationHasEnabled(helperBundleId) ? .on : .off
         })
@@ -83,6 +84,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             alert.informativeText = "Please retry with watch Console.app"
             alert.runModal()
         }
+    }
+    
+    lazy var aboutWindowController = StoryboardScene.Main.aboutWindow.instantiate()
+    
+    @objc func showAboutWindow() {
+        aboutWindowController.window?.makeKeyAndOrderFront(self)
     }
 }
 

@@ -1,16 +1,24 @@
 PODS:
+  - LicensePlist (2.9.0)
+  - SwiftGen (6.1.0)
   - "※ikemen (0.6.0)"
 
 DEPENDENCIES:
+  - LicensePlist
+  - SwiftGen
   - "※ikemen"
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
+    - LicensePlist
+    - SwiftGen
     - "※ikemen"
 
 SPEC CHECKSUMS:
+  LicensePlist: 94c2f54bb9cc5427797addaeb716cfaba3544e89
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
 
-PODFILE CHECKSUM: dbb7b1da7c5d8b8e4919d5c6aef935dc5f518297
+PODFILE CHECKSUM: 1e52e3585ccc6561641266b70ecbcdc438f7a338
 
 COCOAPODS: 1.8.4

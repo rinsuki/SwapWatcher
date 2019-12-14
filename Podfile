@@ -7,6 +7,8 @@ target 'SwapWatcher' do
 
   # Pods for SwapWatcher
   pod "※ikemen"
+  pod "LicensePlist"
+  pod "SwiftGen"
 
   target 'SwapWatcherTests' do
     inherit! :search_paths

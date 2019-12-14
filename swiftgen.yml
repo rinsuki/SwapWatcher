@@ -1,0 +1,7 @@
+output_dir: SwapWatcher/SwiftGen/
+
+ib:
+  inputs: SwapWatcher/
+  outputs:
+    - templateName: scenes-swift4
+      output: StoryboardScenes.swift
